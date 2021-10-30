@@ -4,11 +4,11 @@
 
     // if a user passes an ID via a query string (?id=1)
     // then we should retrieve the row of data that matches and pass it back to the app
-    function mariaPortData($conn, $prof) {
-        if (is_null($prof)) {
+    function mariaPortData($conn, $projects) {
+        if (is_null($projects)) {
             $query = "SELECT * FROM projects";
         } else {
-            $query = "SELECT * FROM projects WHERE id='".$prof."'";
+            $query = "SELECT * FROM projects WHERE id='".$projects."'";
         }
 
         // this is the database result -> the raw data that SQL gives us
