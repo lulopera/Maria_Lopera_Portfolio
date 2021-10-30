@@ -6,35 +6,165 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/main.css">
-    <title>Working With Fetch</title>
+    <title>Maria Lopera Portfolio</title>
 </head>
-<body>
-    <main>
-        <h1>My Awesome Team</h1>
-
-        <h2 class="team-blurb">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam dolorum repellendus velit pariatur ad labore, rem architecto inventore? Officiis tenetur molestias distinctio, provident non labore porro obcaecati nesciunt molestiae quas?
+<h1 class="hidden">Maria Lopera Portfolio</h1>
+<div id="container">
+        <header id="mainHeader" class="gridCon">
+                <img src="images/name-blue.svg" width="300px"  height="100px">
+                
+                <nav id="mainNav">
+                    <h2 class="hidden">Main Navigation</h2>
+                    <button id="button"></button>
+                    <div id="burgerCon">
+                        <ul id="burgerMenu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
             
-            Ipsum accusantium adipisci incidunt error, expedita porro explicabo fugit excepturi quibusdam illum qui consequuntur veritatis, veniam ducimus sit. Quam vel tempore assumenda nihil? Adipisci quis ad magnam quas exercitationem sequi!
-        </h2>
+        </header>
 
-        <!-- this is where our dynamic data will go -->
-        <section id="team-members"></section>
-    </main>
+        <section id="promo">
+            <h2 class="hidden">Promo</h2>
+            <img src="images/symbol-white.svg" width="50px" height="50px">
+            <img src="images/name-white.svg" alt="logo" height="200px" width="200px" id="name-white">
+                <p>Hi! I'm Maria</p>
+                <p>Front End Developer</p>
 
-    <!-- templates go here. by default, template tags don't get rendered into the view -->
-    <template id="bio-template">
-        <section class="bio-panel" data-key="">
-            <div class="p_avatar">
-                <img src="" alt="">
+            <div>
+                <button class="button">Welcome to my site!</button>           
+                <!-- <div class="lightbox">
+                    <div>
+                        <a href="#" class="close">X</a>
+                         <video src="video/promotional.mp4"></video>
+                    </div> -->
+                        
+                    <!-- <div id="controls">       
+                            <div id="controlIcons">
+                                   <button id="playBtn"></button>
+                                    <button id="volumeBtn"></button>
+                                   <input type="range" id="volumeSlider" max="1" value="0.5" step="0.01">
+                            </div>
+                    </div> -->
+                <!-- </div> -->
             </div>
+         </section>   
+         
+         <section id="myTools">
+             <div class="Tools">
+                 <h3>Design Tools</h3>
+                 <nav class="toolsNav">
+                     <li>Illustrator</li>
+                     <li>Photoshop</li>
+                     <li>XD</li>
+                     <li>InDesign</li>
+                     <li>After Effects</li>
+                     <li>Premiere</li>
+                     <li>Cinema4D</li>   
+                 </nav>
+             </div>
+
+             <div class="Tools">
+                <h3>Dev Tools</h3>
+                <nav class="toolsNav">
+                    <li>Terminal</li>
+                    <li>GitHub</li>
+                    <li>Visual Studio Code</li>
+                    <li>Sublime Text</li>                 
+                </nav>
+            </div>
+
+             <div class="Tools">
+                <h3>Languages I speak</h3>
+                <nav class="toolsNav">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>SASS</li>
+                    <li>JS</li>
+                    <li>MySQL</li>
+                    <li>PHP</li>
+                </nav>
+            </div>
+
+           
+         </section>
+                    
+            <section id="agencyServices">
+                <h2 class="hidden">Agency Services</h2>
+        
+                <div class="services">
+                            <img src="images/photography.jpg" alt="Lake Huron">
+                            <h3>GRAPHIC DESIGN</h3>
+                </div>
+
+                <div class="services">
+                            <img src="images/digital-graphic.jpg" alt="digital art" height="250"	width="400">
+                            <h3>WEB DEVELOPMENT</h3>
+                </div>
+        
+                <div class="services">
+                            <img src="images/3d-animation.jpg"  alt="Beer case">
+                            <h3>WEB DESIGN</h3>
+                </div>
+        
+                <div class="services">
+                            <img src="images/marketing.jpg"  alt="office">
+                            <h3>3D ANIMATION</h3>
+                </div>
+        
+                <div class="services">
+                            <img src="images/coding.jpg"  alt="screen with code">
+                            <h3>VIDEO/PHOTO EDITION</h3>
+                </div>
+        
+                <div class="services">
+                            <img src="images/video-editing.jpg"  alt="video edition">
+                            <h3>DIGITAL MARKETING</h3>
+                </div>
+                        
+            </section>
+
+            <footer id="mainFooter">
+                <nav id=footerNav>
+                    <h2 class="hidden">Footer Navigation</h2>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                </nav>
     
-            <h2 class="p_name"></h2>
-            <h3 class="p_role"></h3>
-            <p class="p-description"></p>
-        </section>
-    </template>
-    <!-- end templates -->
+                <nav id="socialMenu">
+                    <h2 class="hidden">Social Navigation</h2>
+                       <ul id="iconNav">
+                         <li id="facebook">
+                         <a href="http://www.facebook.com">
+                          <img src="images/facebook.svg" alt="facebook"></a>
+                         </li>
+                          <li id="twitter">
+                           <a href="http://www.twitter.com">
+                            <img src="images/twitter.svg" alt="twitter"></a>
+                         </li>
+                           <li id="youtube">
+                           <a href="http://www.youtube.com">
+                           <img src="images/youtube.svg" alt="youtube"></a>
+                         </li>
+                          </ul>
+                </nav>
+                            
+                        <div id="copyright">
+                            <p>© 2021 Maria Lopera</p>
+                                
+                        </div>
+                        
+            </footer>
+        
+</div>
 
     <script src="js/main.js" type="module" defer></script>
 </body>
