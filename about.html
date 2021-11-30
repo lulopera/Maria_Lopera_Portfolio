@@ -6,12 +6,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/main.css">
-    <title>Working With Fetch</title>
+    <title>Maria Lopera Portfolio</title>
 </head>
-<body>
-    <main>
-        <h1>About me</h1>
+<h1 class="hidden">Maria Lopera Portfolio</h1>
+<div id="container">
+        <header id="mainHeader" class="gridCon">
+                <img src="images/name-blue.svg" width="300px"  height="100px">
+                
+                <nav id="mainNav">
+                    <h2 class="hidden">Main Navigation</h2>
+                    <button id="button"></button>
+                    <div id="burgerCon">
+                        <ul id="burgerMenu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            
+        </header>
+
+        <lightbox class="lightbox" 
+            v-on:closelb="closeLightBox"
+            :class='{ visible: isVisible }' 
+            :piece="currentPortfolioItem">
+            </lightbox>
+        <!-- this is where our dynamic data will go -->
+        
+        <section id="projects">
+            
+
+            <thumb 
+                v-on:showdata="popLightBox" 
+                v-for="item in portfolioData" 
+                :piece="item" 
+                :key="item.id">
+            </thumb>
+    
+        </section>
+
+        
+        <footer id="mainFooter">
+            <nav id=footerNav>
+                <h2 class="hidden">Footer Navigation</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+            </nav>
+
+            <nav id="socialMenu">
+                <h2 class="hidden">Social Navigation</h2>
+                    <ul id="iconNav">
+                        <li id="facebook">
+                        <a href="http://www.facebook.com">
+                        <img src="images/facebook.svg" alt="facebook"></a>
+                        </li>
+                        <li id="twitter">
+                        <a href="http://www.twitter.com">
+                        <img src="images/twitter.svg" alt="twitter"></a>
+                        </li>
+                        <li id="youtube">
+                        <a href="http://www.youtube.com">
+                        <img src="images/youtube.svg" alt="youtube"></a>
+                        </li>
+                        </ul>
+            </nav>
+                        
+                    <div id="copyright">
+                        <p>© 2021 Maria Lopera</p>
+                            
+                    </div>
+                    
+        </footer>
+        
+</div>
 
     <script src="js/main.js" type="module" defer></script>
+    <script src="js/layout.js" type="module" defer></script>
 </body>
 </html>

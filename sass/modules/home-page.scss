@@ -2,6 +2,7 @@
     background: url(../dist/desk-mobile.jpg) center no-repeat;
     font-family: 'Avenir';
     text-align: center;
+    margin-top: 40px;
 }
 
 #name-white {
@@ -38,17 +39,29 @@
 #myTools {
     display: flex;
     flex-direction: column;
-    font-family: 'Maven Pro';
+    // font-family: 'Maven Pro';
     font-size: 20px;
     color: #707070;
     align-items: center;
     margin-top: 30px;
 }
 
+#myTools h2 {
+    color: #00868E;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif; 
+    margin-top: 20px;
+}
+
+.Tools {
+    margin-top: 20px;
+}
+
 #myTools h3 {
     color: #00868E;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
 .toolsNav {
@@ -60,7 +73,24 @@
 	padding: 10px 0 10px 0;
 	text-align: center;
 	color: #707070; 
-    font-size: 12px;
+    font-size: 20px;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-width: 500px)    {
+    #promo {
+        background: url(../dist/desk-desktop.jpg) center no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        
+    }
+
+    #languages {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    
+    }
 }

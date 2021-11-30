@@ -1,11 +1,11 @@
 header {
-    background-color: white;
+    // background-color: white;
     // height: 200px;
-    border-bottom: thin 5px #707070;
+    border-bottom: thin 5px #70707075;
     font-family: Arial, Helvetica, sans-serif;
 } 
 
-    #mainNav
+#mainNav
 {
 	text-align: right;
 	// padding-top: 5px;
@@ -13,46 +13,100 @@ header {
 	padding-bottom: 10px;
 }
 
-// #burgerCon
-// {
-// 	margin-top: 10px;
-// 	display: none;
-// }
+#burgerCon
+{
+	margin-top: 10px;
+	display: none;
+}
 
-// #burgerCon.slideToggle
-// {
-// 	display: block;
-// }
+#burgerCon.slideToggle
+{
+	display: block;
+}
 
-// #mainNav button
-// {
-// 	background: url(../images/burger.svg) center no-repeat;
-// 	border: 0;
-// 	width: 20px;
-// 	height: 20px;
-// 	transition: all .5s ease;
+#mainNav button
+{
+	background: url(../images/burger.svg) center no-repeat;
+	border: 0;
+	width: 20px;
+	height: 20px;
+	transition: all .5s ease;
 	
-// }
+}
 
-// #mainNav button.expanded 
-// {
-// 	 -webkit-transform: rotate(180deg);
-// 	 -ms-transform: rotate(180deg);
-// 	 transform: rotate(180deg); 
-// }
+#mainNav button.expanded 
+{
+	 -webkit-transform: rotate(180deg);
+	 -ms-transform: rotate(180deg);
+	 transform: rotate(180deg); 
+}
 
+#mainNav li {
+	color: white;
+}
 #mainNav li a
 {
 	display: block;
 	padding: 10px 0 10px 0;
 	text-align: center;
-	color: #2d2f44; 
     font-size: 14px;
-    text-decoration: none;
 }
 
 #mainNav li a:hover
 {
 	background-color: #efefef;
+}
+
+@media screen and (min-width: 500px) {
+	#mainHeader {
+		display: flex;
+		flex-direction: row;
+	}
+
+	header img{
+		padding: 20px;
+	}
+	#button {
+		display: none;
+	}
+
+	#mainNav {
+		
+			text-align: right;
+			margin-left: auto;
+			/*margin-top: 200px;*/
+			padding-right: 40px;
+			padding-bottom: 15px;
+			padding-top: 50px;
+	
+	}
+
+	#burgerCon {
+		display: flex;
+		flex-direction: row;
+		// margin: 0;
+	}
+
+	#mainNav li {
+		display: inline;
+		margin-left: 20px;
+	}
+
+	#mainNav li a
+	{
+		display: inline;
+		padding: 10px 10px 10px 10px;
+		color: white;
+		font-size: 20px;
+		text-decoration: none;
+	}
+
+	#mainNav li a:hover
+	{
+
+		background-color: transparent;
+		color: #b2b1b9;
+
+	}
 }
 
