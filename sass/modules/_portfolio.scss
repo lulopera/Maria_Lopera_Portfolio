@@ -1,0 +1,33 @@
+#projects {
+    text-align: left;
+}
+
+.project-panel {
+    margin-top: 50px;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+
+.project-panel h2 {
+color: white;
+// text-align: center;
+padding: 5px;
+}
+
+
+.project-panel button {
+background-color: transparent;
+color: white;
+font-weight: 300;
+font-size: 14px;
+border-radius: 5px;
+border-color:white;
+transition: all .5s ease;
+width: 160px;
+display: block; 
+// margin:auto;
+font-family: Arial, Helvetica, sans-serif;
+padding: 5px 0 px 0;
+cursor: pointer;
+}
