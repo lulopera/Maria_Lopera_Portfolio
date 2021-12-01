@@ -40,7 +40,8 @@ import LightboxComponent from "./components/TheLightboxComponent.js";
             lightbox: LightboxComponent
         }
 
-
+        
+    
     
 }).$mount("#app"); 
        

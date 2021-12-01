@@ -6,7 +6,7 @@ export default {
     template: `
     <div class="project-panel">
         <div class="p_stuff">
-            <img :src='"images/" + piece.biopic' :alt="piece.name">
+            <img :src='"images/" + piece.biopic' :alt="piece.name" :width="300" :height="200">
         </div>
 
         <h2 class="p_proj">{{ piece.name }}</h2>

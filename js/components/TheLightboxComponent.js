@@ -1,17 +1,23 @@
+import TheVideoComponent from "./TheVideoComponent.js";
 export default {
     name: "TheLigthboxComponent",
 
     props: ["piece"],
 
-    // data: function() {
-    //     return {
-    //         activeComponent: AudioComponent
-    //     }
-    // },
+    computed:{
+        activeComponent: function() {
+            return `${this.piece.mediaType + "Component"}`;
+        }
+    },
+
 
     template: `
     <section>
         <i @click="closeMe" class="fa-solid fa-circle-xmark"></i>
+        
+
+        <component v-if="piece.mediaType":is="activeComponent"></component>
+        
         <h1>{{ piece.project}}</h1>
         <nav>
         <li><span>{{piece.category}}</span></li>
@@ -23,12 +29,18 @@ export default {
 
 
     </section>
-    `
-    ,
+    `,
 
     methods: {
         closeMe() {
+            // document.querySelector(".ligthbox").classList.remove('visible');
             this.$emit("closelb");
         }
-    }
+    },
+
+    components: {
+        VideoComponent: TheVideoComponent
+    },
+
+    
 }

@@ -1,14 +1,17 @@
 .lightbox {
     position: relative;
-    width: 60%;
-    height: 60%;
-    background-color: grayscale($color: hsl(0, 0%, 77%));
-    font-weight: bold;
+    width: 40%;
+    height: 80%;
+    background-color: #70707050;
+    font-weight: 300;
     text-decoration: none;
     padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Avenir';
     margin: 40px auto 40px auto;
-    display: none;    
+    display: none; 
+    line-height: 24px; 
+     
+    
 }
 
 .visible {
@@ -17,7 +20,8 @@
 
 .lightbox h1 {
     font-size: 24px;
-    color: #a82424;
+    color: #00868E;
+    padding: 5px;
 }
 
 .lightbox span {
