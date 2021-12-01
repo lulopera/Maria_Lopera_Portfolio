@@ -27,13 +27,70 @@
 	font-weight: 300;
 	font-size: 20px;
 	border-radius: 10px;
-	border-color: #fff;
+	border-color: white;
 	transition: all .5s ease;
 	width: 260px;
 	margin-top: 25px;
 	margin-bottom: 40px;
 	padding: 10px 0 10px 0;
 	cursor: pointer;
+}
+
+// lightbox-promo
+.lightbox-promo
+{
+	display: none;
+	position: absolute;
+	left: 0;
+	top:200px;
+	width: 100%;
+	align-items: center;
+	padding: 50px auto 500px auto;
+	background-color: rgba(0, 0, 0, 0.8);
+	
+}
+
+	.show-lightbox
+	{
+		display: block;
+        
+		/*text-align: center;*/
+	}
+	/*opened lightbox*/
+
+
+
+	/*close button*/
+	.lightbox-promo .close 
+	{
+		position: absolute;
+		right: 2%;
+		top: 5%;
+		font-size: 25px;
+		color: #fff;
+		text-decoration: none;
+	}
+
+	video 
+	{
+		width: 100%;
+		margin-top: 50px;
+		
+	}
+
+.miniAbout {
+    color: white;
+    font-family: 'Avenir';
+    font-size: 20px;
+    width: 80%;
+    margin: 50px auto auto auto;
+    line-height: 30px;
+    text-align: center;
+
+}
+
+.miniAbout video {
+    margin: auto;
 }
 
 #myTools {
