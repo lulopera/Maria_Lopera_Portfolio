@@ -1,7 +1,7 @@
 <?php 
     $db_dsn = array( 
         'host' => 'localhost', // this will change when you go live
-        'dbname' => 'db_portfolio', // update this with your database name
+        'dbname' => 'mariaPortData', // update this with your database name
         'charset' => 'utf8'
     );
 

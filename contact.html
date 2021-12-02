@@ -30,55 +30,51 @@
         </header>
 
         <main>
-        
+                 
+        <p id="hello">
+            Let me know if you think I can be part of your project or teamwork. Or if you just want to leave a message or learn more about my work. Thank you for contacting me!</p>
+
+    
+
+        <h2 class="mail-header">I'D LIKE TO HEAR FROM YOU</h2>
+
+        <form action="./includes/send.php" method="POST" id="mail-form">
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" name="firstname" placeholder="first name" required>
+
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" name="lastname" placeholder="last name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="email" required>
+            <br/><br/>
             
-            <p>
-                Let me know if you think I can be part of your project or teamwork. Or if you just want to leave a message or learn more about my work.
-            </p>
-    
-            <hr class="separator">
-    
-            <h2 class="mail-header">I'd like to hear from you</h2>
-    
-            <form action="./includes/send.php" method="POST" id="mail-form">
-                <label for="firstname">First Name</label>
-                <input type="text" id="firstname" name="firstname" placeholder="First Name" required>
-    
-                <label for="lastname">Last Name</label>
-                <input type="text" id="lastname" name="lastname" placeholder="Last Name" required>
-    
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Email" required>
-                <br/><br/>
+            <select id="info" name="info">
+                <option value= "Greeting">What kind of info you look for </option>
+                <option value= "Message">General message </option>
+                <option value= "Web"> Quote for web development</option>
+                <option value= "Animation">Quote for animation</option>
                 
-    
-                <!-- From line 41 to 47 is html code for dropdown menu -->
-                <select id="info" name="info">
-                    <option value= "Greeting">What kind of info you look for </option>
-                    <option value= "Message">General message </option>
-                    <option value= "Web"> Quote for web development</option>
-                    <option value= "Animation">Quote for animation</option>
-                  
-                    </select><br/><br/>
-    
-                <label for="message">Your Message</label>
-                <textarea name="message" id="message" cols="50" rows="10"></textarea>
-    
-    
-                <!-- From line 54 to 57 is html code for recapthca. Here goes the sitekey (I created a set key for localhost) -->
-                <div class="g-recaptcha" 
-                 data-sitekey="6LfbP1gdAAAAAIarwfm_WvrN_hcBMXuYKQsssESJ" 
-                 data-callback='onSubmit' 
-                 data-action='submit'></div>
-    
+                </select><br/><br/>
+
+            <label for="message">Your Message</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+            <div class="g-recaptcha" 
+                data-sitekey="6LfbP1gdAAAAAIarwfm_WvrN_hcBMXuYKQsssESJ" 
+                data-callback='onSubmit' 
+                data-action='submit'></div>
+
+
                 <div class="submit-wrapper">
                     <span class="submit">Submit</span>
                     <i class="fas fa-paper-plane"></i>
                 </div>
-    
-                
-            </form>
-        </main>
+
+            
+                    
+                </form>
+            </main>
         
 
         <footer id="mainFooter">
@@ -94,20 +90,25 @@
 
             <nav id="socialMenu">
                 <h2 class="hidden">Social Navigation</h2>
-                    <ul id="iconNav">
-                        <li id="facebook">
-                        <a href="http://www.facebook.com">
-                        <img src="images/facebook.svg" alt="facebook"></a>
-                        </li>
-                        <li id="twitter">
-                        <a href="http://www.twitter.com">
-                        <img src="images/twitter.svg" alt="twitter"></a>
-                        </li>
-                        <li id="youtube">
-                        <a href="http://www.youtube.com">
-                        <img src="images/youtube.svg" alt="youtube"></a>
-                        </li>
-                        </ul>
+                   <ul id="iconNav">
+                     <li id="facebook">
+                     <a href="http://www.facebook.com">
+                      <img src="images/facebook.svg" alt="facebook"></a>
+                     </li>
+                      <li id="instagram">
+                       <a href="http://www.instagram.com">
+                        <img src="images/instagram.svg" alt="instagram"></a>
+                     </li>
+                       <li id="youtube">
+                       <a href="http://www.youtube.com">
+                       <img src="images/youtube.svg" alt="youtube"></a>
+                     </li>
+                     <li id="linkedin">
+                        <a href="http://www.linkedin.com">
+                        <img src="images/linkdin.svg" alt="linkedin"></a>
+                      </li>
+                      </ul>
+
             </nav>
                         
                     <div id="copyright">
@@ -119,8 +120,10 @@
         
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
     
     <script src="js/layout.js" type="module" defer></script>
+    <script src="js/mailSet.js" type="module" defer></script>
+
 </body>
 </html>

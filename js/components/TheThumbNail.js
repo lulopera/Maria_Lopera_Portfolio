@@ -9,7 +9,7 @@ export default {
             <img :src='"images/" + piece.biopic' :alt="piece.name" :width="300" :height="200">
         </div>
 
-        <h2 class="p_proj">{{ piece.name }}</h2>
+        <h2 class="p_proj">{{ piece.project }}</h2>
         
 
         <button @click="showmydata">More Info</button>

@@ -1,3 +1,9 @@
+.aboutMe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 .aboutMe img {
     border-radius: 50%;
     width: 50%;
@@ -6,4 +12,16 @@
     filter: grayscale(50%);
     // filter: opacity(30%);
 
+}
+
+.aboutMe p {
+    font-size: 20px;
+    font-family: 'Avenir';
+    font-weight: 300;
+    line-height: 30px;
+    color: white;
+    padding: 40px;
+    width: 50%;
+    text-align: center;
+    margin: auto;
 }
