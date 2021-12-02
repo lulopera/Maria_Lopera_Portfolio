@@ -8,13 +8,16 @@
 	
 }
 
+
 #footerNav 
 {
-	text-align: center;
+	// text-align: center;
 	padding-top: 10px;
 	padding-right: 10px;
 	padding-bottom: 10px;
 }
+
+
 
 #footerNav ul
 {
@@ -24,9 +27,9 @@
 
 #footerNav  li a
 {
-	display: inline-flex;
+	display: inline-block;
 	transition: all .3s ease-in-out;
-	text-align: center;
+	// text-align: center;
 	font-family: helvetica;
 	padding: 10px 20px 10px 20px;
 	color: rgba($color: hsl(229, 82%, 54%), $alpha: 1.0);
